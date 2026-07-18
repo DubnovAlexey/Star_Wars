@@ -3,6 +3,8 @@
 
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
 }
 
@@ -24,29 +26,104 @@ header {
 
 h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 2.5em;
     padding: 0.5em;
 }
 
 nav {
-    position: fixed;
-    top: 5px;
-    left: 40px;
+    float: left;
+    margin: 5px 0 0 40px;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
 }
+
+
 nav ul li {
-    display: inline-block;
+    float: left;
+    margin-right: 3px;
     border: 2px solid black;
-    background-color: rgba(204,3,35,0.5);
+    background-color: rgba(204, 3, 35, 0.5);
     cursor: pointer;
     font-size: 1em;
     padding: 0.3em 0.5em;
     border-radius: 10px;
+}
 
+section.left {
+    width: 25%;
+    float: left;
+    max-width: 275px;
+}
+
+section.left img {
+    width: 100%;
+    height: auto;
+    max-height: 275px;
+    display: block;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.75);
+}
+
+section.right {
+    width: 50%;
+    float: right;
+    margin: 1px;
+    padding: 1px;
+    border: 2px solid #eedb00;
+    border-radius: 0 0 14px 14px;
+    overflow: hidden;
+
+}
+
+section.right > h2 {
+    text-align: center;
+    font-size: 1em;
+    padding: 0.1em;
+
+}
+
+section.right img {
+    float: left;
+    display: block;
+    width: 33.333%;
+    height: 182px;
+    object-fit: cover;
+    border: 1px solid black;
+}
+
+p.far-galaxy {
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+footer {
+    clear: both;
+    min-height: 70px;
+    padding: 5px 2px;
+    bottom: 0;
+}
+
+/* На узком экране заголовок переносится целиком */
+@media (max-width: 760px) {
+    nav {
+        float: none;
+        overflow: hidden;
+    }
+
+    h1 {
+        clear: both;
+        white-space: nowrap; /* «Luke Skywalker» не разрывается на два слова.*/
+        font-size: 2.5em;
+    }
+}
+
+
+/* Очень узкий экран: уменьшаем весь заголовок, но не разрываем его */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em;
+    }
 }
 
 /*
