@@ -57,6 +57,7 @@ section.left {
     width: 25%;
     float: left;
     max-width: 275px;
+    margin-right: 1%;
 }
 
 section.left img {
@@ -64,17 +65,19 @@ section.left img {
     height: auto;
     max-height: 275px;
     display: block;
-    box-shadow: 10px 10px 12px 1px rgb(225 215 17 / 0.5)
+    box-shadow: 10px 10px 12px rgb(250, 250, 246,0.5);
+    border: 1px solid black;
+
 
 }
 
 section.right {
     width: 50%;
     float: right;
-    margin: 1px;
+    margin-left: 1%;
     padding: 1px;
-    border: 2px solid #eedb00;
-    border-radius: 0 0 14px 14px;
+    border: 1px solid #eedb00;
+    border-radius: 0 0 16px 16px;
     overflow: hidden;
 
 }
