@@ -28,6 +28,8 @@ h1 {
     text-align: center;
     font-size: 2.5em;
     padding: 0.5em;
+    white-space: nowrap; /* «Luke Skywalker» не разрывается на два слова.*/
+
 }
 
 nav {
@@ -62,7 +64,8 @@ section.left img {
     height: auto;
     max-height: 275px;
     display: block;
-    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 12px 1px rgb(225 215 17 / 0.5)
+
 }
 
 section.right {
@@ -124,7 +127,6 @@ footer .button {
 
     h1 {
         clear: both;
-        white-space: nowrap; /* «Luke Skywalker» не разрывается на два слова.*/
         font-size: 2.5em;
     }
 }
@@ -134,6 +136,7 @@ footer .button {
 @media (max-width: 480px) {
     h1 {
         font-size: 1.8em;
+        clear: left;
     }
 }
 
