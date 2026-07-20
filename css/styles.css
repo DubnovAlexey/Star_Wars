@@ -98,6 +98,8 @@ footer {
     min-height: 70px;
     padding: 5px 2px;
     border-radius: 0 0 16px 16px;
+    bottom: 0;
+    position: relative;
 }
 
 .button {
@@ -110,6 +112,12 @@ footer {
     padding: 0.3em 0.5em;
     border-radius: 10px;
 
+}
+
+footer .button {
+    position: absolute;
+    left: 5%;
+    top: 25%;
 }
 
 /* На узком экране заголовок переносится целиком */
