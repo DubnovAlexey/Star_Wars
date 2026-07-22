@@ -77,13 +77,13 @@ section.right > h2 {
     padding: 0.1em;
 
 }
-
+.right table {
+    width: 100%;
+}
 section.right img {
-    float: left;
+
     display: block;
-    width: 33.333%;
-    height: 182px;
-    object-fit: cover;
+    width: 100%;
     border: 2px solid black;
 }
 
