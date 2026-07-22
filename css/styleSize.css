@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    width: 600px;
+    height: 450px;
+    background-color: lightpink;
+    margin: 0 auto;
+
+}
+/*
+widht -> flex-basis (row) -> max-width
+height -> flex-basis (column) -> max-height
+ */
+
+.item {
+    width: 150px;
+    height: 150px;
+    /*flex-basis: 170px;*/
+    max-width: 160px;
+    font-size: 3em;
+    text-align: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.red {
+    background-color: red;
+    /*flex-grow: 1;*/
+}
+
+.green {
+    background-color: green;
+    flex-basis: 200px;
+    /*flex-grow: 2;*/
+}
+
+.blue {
+    background-color: blue;
+    /*flex-grow: 3;*/
+}
+
+/*
+HW_11_Text
+https://flexboxfroggy.com/#ru пройти игру до конца - все 24 шага
+StarWars нарисовать с использованием таблиц правый блок
+StarWars нарисовать с использованием технологии Flex правый блок
+ */
