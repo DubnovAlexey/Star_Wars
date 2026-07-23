@@ -8,15 +8,20 @@
 
 }
 
+:root {
+    --primary-color: #eedb00;
+    --secondary-color: 60, 69, 67;
+}
+
 body {
     font-family: 'Poller One', cursive;
     background-image: url("../Images/sky.jpg");
-    color: #eedb00;
+    color: var(--primary-color);
     background-attachment: fixed;
 }
 
 header, footer {
-    background-color: rgba(60, 69, 67, 0.6);
+    background-color: rgba(var(--secondary-color), 0.6);
 
 }
 
@@ -65,7 +70,7 @@ section.right {
     float: right;
     margin-left: 1%;
     padding: 1px;
-    border: 1px solid #eedb00;
+    border: 1px solid var(--primary-color);
     border-radius: 0 0 16px 16px;
     overflow: hidden;
 
