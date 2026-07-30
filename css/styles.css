@@ -1,155 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
 :root {
-    --primary-color: #eedb00;
-    --secondary-color: 60, 69, 67;
+    --color-main: #eedb00;
+    --bg-color-gray: rgba(60, 69, 67, 0.6);
+    --bg-color-danger: rgba(204, 3, 35, 0.5);
 }
 
 body {
-    font-family: 'Poller One', cursive;
+    font-family: "Poller One", sans-serif;
     background-image: url("../Images/sky.jpg");
-    color: var(--primary-color);
+    color: var(--color-main);
     background-attachment: fixed;
 }
 
 header, footer {
-    background-color: rgba(var(--secondary-color), 0.6);
-
+    background-color: var(--bg-color-gray);
 }
 
-header {
-    border-radius: 16px 16px 0 0;
+/* Header */
+
+/* Main */
+
+main > .float-start {
+    box-shadow: 0.6rem 0.6rem 0.6rem gray;
 }
 
-h1 {
-    text-align: center;
-    font-size: 2.5em;
-    padding: 0.5em;
-    white-space: nowrap; /* «Luke Skywalker» не разрывается на два слова.*/
-
-}
-
-nav {
-    float: left;
-    margin: 5px 0 0 40px;
-}
-
-nav ul {
-    list-style: none;
-}
-
-
-section.left {
-    width: 25%;
-    float: left;
-    max-width: 275px;
-    margin-right: 1%;
-}
-
-section.left img {
-    width: 100%;
-    height: auto;
-    max-height: 275px;
-    display: block;
-    box-shadow: 10px 10px 12px rgb(250, 250, 246, 0.5);
-    border: 1px solid black;
-
-
-}
-
-section.right {
-    width: 50%;
-    float: right;
-    margin-left: 1%;
-    padding: 1px;
-    border: 1px solid var(--primary-color);
-    border-radius: 0 0 16px 16px;
-    overflow: hidden;
-
-}
-
-section.right > h2 {
-    text-align: center;
-    font-size: 1em;
-    padding: 0.1em;
-
-}
-
-section.right img {
-    float: left;
-    display: block;
-    width: 33.333%;
-    height: 182px;
-    object-fit: cover;
-    border: 2px solid black;
-}
-
-p.far-galaxy {
-    font-size: 1.5em;
-    line-height: 1.4;
+.far-galaxy {
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
     text-align: justify;
 }
 
+.rounded-bottom-left {
+    border-bottom-left-radius: 2rem;
+}
+
+.rounded-bottom-right {
+    border-bottom-right-radius: 2rem;
+}
+
+/* Footer */
+
 footer {
-    clear: both;
-    min-height: 70px;
-    padding: 5px 2px;
-    border-radius: 0 0 16px 16px;
-    bottom: 0;
-    position: relative;
+    height: 5rem;
 }
 
-.button {
-    float: left;
-    margin-right: 3px;
-    border: 2px solid black;
-    background-color: rgba(204, 3, 35, 0.5);
-    cursor: pointer;
-    font-size: 1em;
-    padding: 0.3em 0.5em;
-    border-radius: 10px;
+/* Customizing */
 
+.btn-danger {
+    background-color: var(--bg-color-danger);
+    color: var(--color-main);
 }
-
-footer .button {
-    position: absolute;
-    left: 5%;
-    top: 25%;
-}
-
-/* На узком экране заголовок переносится целиком */
-@media (max-width: 760px) {
-    nav {
-        float: none;
-        overflow: hidden;
-    }
-
-    h1 {
-        clear: both;
-        font-size: 2.5em;
-    }
-}
-
-
-/* Очень узкий экран: уменьшаем весь заголовок, но не разрываем его */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.8em;
-        clear: left;
-    }
-}
-
-/*
-Доделайте оформление css так, что бы максимально подходило под
-дизайн картинки с использованием технологии флоат
-
-Пока таблицы не используем и index не меняем
- */
