@@ -36,7 +36,7 @@ This is a static layout study. The navigation labels and “Send me email” are
 
 Proposals below are planned work, not existing features.
 
-- Visual: align spacing and mobile typography across the three layouts, with a shared small Star Wars favicon.
+- Visual: align spacing and mobile typography across the three layouts.
 - Engineering: give the navigation real links and visible keyboard focus; consolidate repeated style rules while preserving the layout examples.
 - Features: add a layout comparison switch and an accessible enlarged view of the gallery.
 
@@ -78,7 +78,7 @@ HTML5 · CSS3 (Flexbox) · GitHub Pages
 
 Ниже перечислены предложения, а не уже реализованные функции.
 
-- Визуал: согласовать отступы и мобильную типографику трёх вариантов; общий малый favicon Star Wars.
+- Визуал: согласовать отступы и мобильную типографику трёх вариантов.
 - Инженерия: настоящие ссылки навигации и заметный фокус с клавиатуры; вынести общие стили, сохранив примеры вёрстки.
 - Функции: переключатель сравнения вариантов и доступный увеличенный просмотр галереи.
 
@@ -116,7 +116,7 @@ HTML5 · CSS3 (Flexbox) · GitHub Pages
 
 הסעיפים הבאים הם הצעות להמשך, לא יכולות שכבר יושמו.
 
-- עיצוב: ריווח וטיפוגרפיה עקביים בטלפון בשלוש הפריסות, עם סמל לשונית משותף של Star Wars.
+- עיצוב: ריווח וטיפוגרפיה עקביים בטלפון בשלוש הפריסות.
 - הנדסה: קישורי ניווט פעילים ומיקוד ברור במקלדת; איחוד סגנונות כפולים תוך שמירת דוגמאות הפריסה.
 - יכולות: מתג להשוואת הפריסות ותצוגה מוגדלת ונגישה של הגלריה.
 
