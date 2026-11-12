@@ -1,6 +1,8 @@
+<!--suppress MarkdownUnresolvedFileReference -->
+
 # Star Wars (HTML & CSS)
 
-[English](#english) · [Русский](#russian) · [עברית](#hebrew)
+[English](#english) · [Русский](#russian) · [עברית](#hebrew) · [Español](#spanish) · [Français](#french)
 
 <a name="english"></a>
 
@@ -121,3 +123,87 @@ HTML5 · CSS3 (Flexbox) · GitHub Pages
 - יכולות: מתג להשוואת הפריסות ותצוגה מוגדלת ונגישה של הגלריה.
 
 </div>
+
+---
+
+<a name="spanish"></a>
+
+## Español
+
+**Star Wars (HTML y CSS)**
+
+Un estudio estático de maquetación sobre «La guerra de las galaxias» en HTML y CSS, anterior a la versión en React ([star-wars-ts-routing](https://github.com/DubnovAlexey/star-wars-ts-routing)). Contiene los títulos de apertura de «Una nueva esperanza», la foto del héroe y una galería de amigos, maquetados de tres maneras: con tabla, con Flexbox y con Flexbox centrado.
+
+**Demo:** https://dubnovalexey.github.io/Star_Wars/
+
+### Pruébelo
+
+Abra src/index.html, src/index_flex.html y src/centerFlex.html: es una misma composición en tres variantes de maquetación. Cambie el ancho de la ventana y compare el retrato del héroe con la galería del equipo.
+
+### Qué hay dentro
+
+- `src/index.html` — la página principal; `src/index_flex.html` y `src/centerFlex.html` — el mismo contenido con Flexbox.
+- Fondo estrellado y diseño al estilo de «La guerra de las galaxias» en CSS puro.
+- `starsWars.txt` — el texto original de los títulos.
+
+### Tecnologías
+
+HTML5 · CSS3 (Flexbox) · GitHub Pages
+
+### Cómo ejecutarlo
+
+Abra `index.html` (o `src/index.html`) en el navegador.
+
+### Alcance de la demo
+
+Es un estudio estático de maquetación. Los nombres del menú y «Send me email» son decorativos: aquí no hay carga de API, envío de mensajes ni rutas interactivas de héroes.
+
+### Desarrollo futuro
+
+Lo que sigue son propuestas, no funciones ya implementadas.
+
+- Visual: igualar márgenes y tipografía móvil de las tres variantes.
+- Ingeniería: enlaces de navegación reales y un foco de teclado visible; sacar los estilos comunes conservando los ejemplos de maquetación.
+- Funciones: un selector para comparar las variantes y una vista ampliada accesible de la galería.
+
+---
+
+<a name="french"></a>
+
+## Français
+
+**Star Wars (HTML et CSS)**
+
+Une étude statique de mise en page sur « La Guerre des étoiles » en HTML et CSS, antérieure à la version React ([star-wars-ts-routing](https://github.com/DubnovAlexey/star-wars-ts-routing)). On y trouve le générique d'ouverture d'« Un nouvel espoir », la photo du héros et une galerie d'amis, mis en page de trois façons : en tableau, en Flexbox et en Flexbox centré.
+
+**Démo :** https://dubnovalexey.github.io/Star_Wars/
+
+### À essayer
+
+Ouvrez src/index.html, src/index_flex.html et src/centerFlex.html : c'est une même composition en trois variantes de mise en page. Changez la largeur de la fenêtre et comparez le portrait du héros avec la galerie de l'équipe.
+
+### Ce qu'il y a dedans
+
+- `src/index.html` — la page principale ; `src/index_flex.html` et `src/centerFlex.html` — le même contenu en Flexbox.
+- Fond étoilé et habillage façon « Guerre des étoiles » en CSS pur.
+- `starsWars.txt` — le texte d'origine du générique.
+
+### Technologies
+
+HTML5 · CSS3 (Flexbox) · GitHub Pages
+
+### Lancer le projet
+
+Ouvrez `index.html` (ou `src/index.html`) dans le navigateur.
+
+### Limites de la démo
+
+C'est une étude statique de mise en page. Les intitulés du menu et « Send me email » sont décoratifs : il n'y a ici ni chargement d'API, ni envoi de messages, ni routes interactives des héros.
+
+### Évolutions possibles
+
+Ce qui suit sont des propositions, pas des fonctions déjà réalisées.
+
+- Visuel : harmoniser les marges et la typographie mobile des trois variantes.
+- Ingénierie : de vrais liens de navigation et un focus clavier visible ; sortir les styles communs en gardant les exemples de mise en page.
+- Fonctions : un sélecteur pour comparer les variantes et une vue agrandie accessible de la galerie.
