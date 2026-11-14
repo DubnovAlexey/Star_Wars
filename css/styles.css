@@ -92,6 +92,34 @@ section.right img {
     border: 2px solid black;
 }
 
+/* Фото героя под мышью: крупная копия поверх страницы (js/hover-zoom.js) — целиком, в чёрной рамке с жёлтой
+   каймой, как у блока «Dream team». Копия не ловит мышь. */
+.zoom-peek {
+    position: fixed;
+    z-index: 1000;
+    pointer-events: none;
+    transform-origin: 0 0;
+    background: #000;
+    border: 2px solid black;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 0 0 2px var(--primary-color), 0 24px 60px rgba(0, 0, 0, 0.8), 10px 10px 24px rgba(250, 250, 246, 0.35);
+    transition: transform 0.32s cubic-bezier(0.2, 0.8, 0.25, 1), opacity 0.24s ease;
+}
+
+.zoom-peek img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .zoom-peek {
+        transition: none;
+    }
+}
+
 p.far-galaxy {
     font-size: 1.5em;
     line-height: 1.4;
